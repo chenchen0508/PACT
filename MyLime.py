@@ -11,7 +11,7 @@ from joblib import load
 
 
 batch_size = 2425
-seqLenth = 38#整个文件是一个batch，这个batch中最长的句子的长度
+seqLenth = 38
 batch_seq_len = []
 idx = 0
 num_sample = 1000
@@ -204,8 +204,6 @@ def getLime():
     print(sorted_indices)
     return 
 
-
-#记得改最前面的参数！！！！！
 import time
 start = time.time()
 getLime()
