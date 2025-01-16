@@ -11,7 +11,7 @@ from joblib import load
 
 
 batch_size = 2425
-seqLenth = 38#整个文件是一个batch，这个batch中最长的句子的长度
+seqLenth = 38
 batch_seq_len = []
 idx = 0
 num_sample = 2425
