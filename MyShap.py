@@ -11,12 +11,12 @@ from joblib import load
 
 
 batch_size = 2425
-seqLenth = 38#38整个文件是一个batch，这个batch中最长的句子的长度
+seqLenth = 38
 batch_seq_len = []
 idx = 0
-#num_sample = 10#每个样本生成多少个相似样本,Lime用
+#num_sample = 10
 try_dir = "./MyData/try.jsonl"#"./MyData/datasetAll.jsonl"
-try_data_size = 10#训练集解释器用多少数据
+try_data_size = 10
 
 """
 def batch2flat(batch_data):
