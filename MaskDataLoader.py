@@ -101,7 +101,7 @@ def collate_fn(data):
     padded_ssen = torch.zeros_like(padded_ssen)#10
     padded_sten = torch.zeros_like(padded_sten)#11
     #dep = torch.zeros_like(dep)#12
-    #dep的在前面
+    
     return padded_freq,padded_wtox,padded_pers,padded_pos,padded_punc,padded_wsen,\
             padded_entity,padded_bifreq,padded_trifreq,\
                 padded_stox,padded_ssen,padded_sten,\
