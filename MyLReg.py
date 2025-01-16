@@ -9,7 +9,7 @@ from joblib import dump
 
 
 batch_size = 2425
-seqLenth = 38#38整个文件是一个batch，这个batch中最长的句子的长度
+seqLenth = 38
 try_dir = "./MyData/try.jsonl"#"./MyData/datasetAll.jsonl"
 
 def batch2flat(batch_data):
@@ -86,7 +86,7 @@ def getMSELoss():
 
     test_dir = './MyData/test.jsonl'
     test_dataset = MyDataset(test_dir)
-    batch_size = 244#给test在最后添加了一条数据
+    batch_size = 244
     test_loader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=False, collate_fn=collate_fn)
     for _, batch_sample in enumerate(tqdm(test_loader)):
         test_data,test_label = batch2flat(batch_sample)
